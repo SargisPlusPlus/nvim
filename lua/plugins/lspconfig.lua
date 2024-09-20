@@ -1,9 +1,4 @@
 return {}
--- local get_root_dir = function(fname)
---   local util = require("lspconfig.util")
---   return util.root_pattern(".git")(fname) or util.root_pattern("package.json", "tsconfig.json")(fname)
--- end
---
 -- return {
 --   "neovim/nvim-lspconfig",
 --   opts = {
@@ -11,10 +6,8 @@ return {}
 --     servers = {
 --       tsserver = {
 --         enabled = false,
---         root_dir = get_root_dir,
 --       },
 --       vtsls = {
---         root_dir = get_root_dir,
 --         -- explicitly add default filetypes, so that we can extend
 --         -- them in related extras
 --         filetypes = {
