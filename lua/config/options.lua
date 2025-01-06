@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
+vim.opt.undofile = false
+vim.opt.undodir = nil
